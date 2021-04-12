@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Filmy</title>
+
+ <link rel="stylesheet" type="text/css" href="css/style.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/fontello.css" />
+
+ 
+</head>
+
+<body width="100%" height="100%">
+
+  <div id="wrapper">
+    <div id="logo">
+    <img src="images/logomyjnia.png" width="150" height="150" alt="a" />
+	
+    
+    </div>
+    <div id="menu">
+        
+    <ul>
+         
+        <li><a href="index.html">Strona główna</a></li>
+		<li><a href="galeria.html">Galeria</a></li>
+		<li><a href="filmy.html">Wideo</a></li>
+        <li><a href="onas.html">O nas</a></li>
+        <li><a href="cennik.html">Cennik</a></li>
+		<li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+        
+    </div>
+	
+    <div id="slider">
+    <img class="zdjdoslidera" src="images/slide3.jpg" alt="slide"/>
+	<img class="zdjdoslidera" src="images/slide2.jpg" alt="slide1"/>
+	<img class="zdjdoslidera" src="images/slide4.jpg" alt="slide2"/>
+    </div>
+    <div id="container">
+    
+	
+ <section id="filmy">
+	<table>
+	<tr>
+	
+	<th><iframe title="cos" width="560" height="315" src="https://www.youtube.com/embed/WtKbddo5Ga4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+	
+    <td><iframe title="cos" width="560" height="315" src="https://www.youtube.com/embed/4_Mz0k7phI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+	</tr>
+	<tr>
+	
+	<td><iframe title="cos" width="560" height="315" src="https://www.youtube.com/embed/OpRFW3H1loQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+    
+	<td><iframe title="cos" width="560" height="315" src="https://www.youtube.com/embed/DIAsbqqu9QU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+	</tr>
+	</table>
+	
+</section>
+
+
+		<div id="footer">
+			<p>&copy Bartosz Antkiewicz </br></p>
+		</div>
+    </div>
+
+	
+<script>
+ var licz=0;
+	animacja();
+		function animacja()
+		{
+			var i;
+			var x = document.getElementsByClassName("zdjdoslidera");
+			for(i=0 ; i < x.length; i++)
+				{
+					x[i].style.display = "none";
+				}
+				licz++;
+				if(licz > x.length)
+					{	
+						licz = 1
+					}
+			x[licz -1].style.display="block";
+			setTimeout(animacja,2000);
+		}
+</script>
+	</body>
+		</html>

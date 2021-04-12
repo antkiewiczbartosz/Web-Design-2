@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Galeria</title>
+
+ <link rel="stylesheet" type="text/css" href="css/style.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fontello.css" />
+ 
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="logo">
+    
+    <img src="images/logomyjnia.png" width="150" height="150" alt="a"/>
+	
+   
+    </div>
+    <div id="menu">
+        
+        <ul>
+			<li><a href="index.html">Strona główna</a></li>
+			<li><a href="galeria.html">Galeria</a></li>
+			<li><a href="filmy.html">Wideo</a></li>
+			<li><a href="onas.html">O nas</a></li>
+			<li><a href="cennik.html">Cennik</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        
+    </div>
+	
+    <div id="slider">
+    <img class="zdjdoslidera" src="images/slide3.jpg" alt="slide1"/>
+	<img class="zdjdoslidera" src="images/slide2.jpg" alt="slide2"/>
+	<img class="zdjdoslidera" src="images/slide4.jpg" alt="slid3"/>
+    </div>
+    <div id="container">
+    <div id="box_news">
+	
+       <h1><center>Nasze Prace:</h1>
+<section>
+
+<table>
+	
+		
+	<tr>
+		<th><img class="galeria" src="images/Zdjecia/zdj9.jpg" alt="a"></th>
+		<td><img class="galeria" src="images/Zdjecia/zdj10.jpg" alt="a"></td>
+		<td><img class="galeria" src="images/Zdjecia/zdj11.jpg" alt="a"></td>
+	</tr>
+	
+	<tr>
+			<td><img class="galeria" src="images/Zdjecia/zdj4.png" alt="a"></td>
+			<td><img class="galeria" src="images/Zdjecia/zdj5.png" alt="a"></td>
+			<td><img class="galeria" src="images/Zdjecia/zdj3.png" alt="a"></td>
+			
+		</tr>
+	
+	<tr>
+		<td><img class="galeria" src="images/Zdjecia/ford1.jpg"></td>
+		<td><img class="galeria" src="images/Zdjecia/ford2.jpg"></td>
+		<td><img class="galeria" src="images/Zdjecia/ford3.jpg"></td>
+		
+	</tr>
+	
+	<tr>
+		<td><img class="galeria" src="images/Zdjecia/audi1.jpg" alt="a"></td>
+		<td><img class="galeria" src="images/Zdjecia/audi2.jpg" alt="a"></td>
+		<td><img class="galeria" src="images/Zdjecia/audi3.jpg" alt="a"></td>
+		
+	</tr>
+	
+	<tr>
+		<td><img class="galeria" src="images/Zdjecia/merc1.jpg" alt="a"></td>
+		<td><img class="galeria" src="images/Zdjecia/merc2.jpg" alt="a"></td>
+		<td><img class="galeria" src="images/Zdjecia/merc3.jpg" alt="a"></td>
+		
+	</tr>
+	
+</table>
+  
+</div>
+	
+</section>
+	
+	</div>
+    <div id="footer">
+        <p>&copy Bartosz Antkiewicz <br/></p>
+    </div>
+    </div>
+	
+<script>
+ var licz=0;
+	animacja();
+		function animacja()
+		{
+			var i;
+			var x = document.getElementsByClassName("zdjdoslidera");
+			for(i=0 ; i < x.length; i++)
+				{
+					x[i].style.display = "none";
+				}
+				licz++;
+				if(licz > x.length)
+					{	
+						licz = 1
+					}
+			x[licz -1].style.display="block";
+			setTimeout(animacja,2000);
+		}
+		
+		
+
+ 
+
+</script>
+			
+	
+	
+</body>
+</html>

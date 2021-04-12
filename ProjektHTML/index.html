@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Projekt aplikacjie www</title>
+
+ <link rel="stylesheet" type="text/css" href="css/style.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/fontello.css" />
+ 
+</head>
+
+<body>
+
+
+	
+		<div id="wrapper">
+		<div id="logo">
+		<img src="images/logomyjnia.png" width="150" height="150" alt="a" />
+		
+	
+	</div>
+	
+    <div id="menu">
+        
+        <ul>
+        <li><a href="index.html">Strona główna</a></li>
+		<li><a href="galeria.html">Galeria</a></li>
+		<li><a href="filmy.html">Wideo</a></li>
+        <li><a href="onas.html">O nas</a></li>
+        <li><a href="cennik.html">Cennik</a></li>
+		<li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        
+    </div>
+
+    <div id="slider">
+    <img class="zdjdoslidera" src="images/slide3.jpg" alt="slide1"/>
+	<img class="zdjdoslidera" src="images/slide2.jpg" alt="slide2"/>
+	<img class="zdjdoslidera" src="images/slide4.jpg" alt="slide3"/>
+    </div>
+<div id="container">
+   <div id="box_news">
+<article>
+ 
+   <section id="aut">
+   <h3> Mycie Podstawowe</h3>
+	
+		<p>Mycie wszystkich zewnętrznych elementów pojazdów włącznie z kołami za pomocą wysokiej jakości szamponu oraz gąbki techniką na dwa wiadra, oraz osuszanie samochodu do sucha za pomocą mikrofibry </p> 
+        <img class="ikona" src="images/myjnia.jpg" alt="a1"/>
+
+    
+</section>
+<section id="maj">
+	<h3> Mycie Kompleksowe</h3> 
+    
+
+            <p>Wszystkie czynności mycie podstawowe, wosk natryskowy, odkurzanie wnętrza, mycie szyb, plastiki wewnętrzne, nabłyszczanie opon i plastikowych elementów zewnętrznych; zapach w areozolu.</p> 
+            <img class="ikona" src="images/komplecik.jpg" alt="a2"/>
+
+    
+</section>
+<section id="os">
+	<h3> Woskowanie</h3> 
+    
+
+            <p> Woskowanie w całości odbywające się w procedurze ręcznej, przy użyciu wosku w postaci płynnej, jest najtrwalszym sposobem zabezpieczenia pojazdu za pomocą wosków i jest w stanie przetrwać na lakierze do 6 miesięcy.</p> 
+            <img class="ikona" src="images/titanum.jfif" alt="a3"/>
+
+    
+</section>
+</article>
+    </div>
+    <div id ="srodki">
+	<h1>Używamy środków tylko najwyższej jakości:</h1>
+	
+	<table>
+<tr>
+   <th><img class="produkt" src="images/loga/adbl.jpg" alt="a"/></th>
+    <td><img class="produkt" src="images/loga/soft.jpg" alt="a"/></td>
+	 <td><img class="produkt" src="images/loga/sonax.jfif" alt="a"/></td>
+	 <td><img class="produkt" src="images/loga/tenzi.png" alt="a"/></td>
+</tr>
+<tr>
+ <td><img class="produkt" src="images/loga/cleantech.png" alt="a"/></td>
+    <td><img class="produkt" src="images/loga/collinite.jfif" alt="a"/></td>
+	 <td><img class="produkt" src="images/loga/zymol.jpg" alt="a"/></td>
+	 <td><img class="produkt" src="images/loga/meguiars.png" alt="a"/></td>
+</tr>
+
+</table>
+	
+	</div>
+    <div id="footer">
+        <p>Bartosz Antkiewicz <br/></p>
+    </div>
+    </div>
+</div>
+
+	
+<script>
+ var licz=0;
+	animacja();
+		function animacja()
+		{
+			var i;
+			var x = document.getElementsByClassName("zdjdoslidera");
+			for(i=0 ; i < x.length; i++)
+				{
+					x[i].style.display = "none";
+				}
+				licz++;
+				if(licz > x.length)
+					{	
+						licz = 1
+					}
+			x[licz -1].style.display="block";
+			setTimeout(animacja,2000);
+		}
+</script>
+			
+	
+	
+</body>
+</html>
